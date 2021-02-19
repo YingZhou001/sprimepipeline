@@ -17,7 +17,3 @@ Last update: 2/18/2021
 4. Start from `pub.pipeline.pbs/step2` to `pub.pipeline.pbs/step5`, type `sh run.sh` in each folder.
 
 All codes are adapted to the Portable Batch System (PBS) based computation cluster.
-
-# License
-
-(need to determine)
