@@ -8,3 +8,16 @@ In this pipeline, we detect Neanderthal and Denisovan introgression in 1000 Geno
 > Pipeline: Y Zhou, S R Browning (2021). Protocol for detecting archaic introgression variants with SPrime. Submitted.
 
 Last update: 2/18/2021
+
+# How to run this pipeline
+
+1. Read the published protocol
+2. Download the whole folder "pub.pipeline.pbs"
+3. In the 'pub.pipeline.pbs/download' folder, type 'sh download.sh' to download all required resources
+4. Start from 'pub.pipeline.pbs/step2' to 'pub.pipeline.pbs/step5', type 'sh run.sh' in each folder.
+
+All codes are adapted to the Portable Batch System (PBS) based computation cluster.
+
+# License
+
+(need to determine)
