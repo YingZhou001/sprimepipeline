@@ -63,7 +63,7 @@ int start, end, L_max=0;
 ifp=fopen(scorefile, "r");
 fgets(buffer, 10240, ifp);
 while(fgets(buffer, 10240, ifp)!=NULL){
-sscanf(buffer, "%*d %d", &pos);
+sscanf(buffer, "%*s %d", &pos);
 if(L_max<=pos)L_max=pos;
 }
 fclose(ifp);
@@ -143,7 +143,7 @@ printf("%c%s", sp,reftag);
 if(dp==1)printf("%c%s_DP",sp, reftag);
 printf("\n");
 while(fgets(buffer, 10240, ifp)!=NULL){
-sscanf(buffer, "%*d %d %*s %c %c %*d %d", &pos, &SNP[0], &SNP[1], &k);
+sscanf(buffer, "%*s %d %*s %c %c %*d %d", &pos, &SNP[0], &SNP[1], &k);
 for(i=0;i<(strlen(buffer)-1);i++)printf("%c", buffer[i]);
 if(data[pos][0]=='0'||deepth[pos]<0){
 printf("%cnotcomp",sp);
